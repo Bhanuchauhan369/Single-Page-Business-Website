@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background-image: url("http://i.imgur.com/JVjb1WP.jpg");
+ 
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #000000;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #000000;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+img{}
+
+small {
+  opacity: 0;
+}
+
+.show-description  {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://i.imgur.com/g59um9y.jpg");
+}
+.second{
+  background-image: url("http://i.imgur.com/Iw8kEcZ.jpg");
+}
+.dessert{
+  background-image: url("http://i.imgur.com/H1wO8hC.jpg");
+}
+.fourth{
+   background-image: url("http://i.imgur.com/JdZ4Bax.jpg");
+  }
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Join the Fun</h1>
+<h2>Play mobile Games for free Online and on the Go!</h2>
+<div class="first">
+  <p>PokeMon <span class="price">$14</span><br />
+  <small>Pokémon Go (stylized as Pokémon GO) is a free-to-play, location-based augmented reality game developed by Niantic for iOS, Android, and Apple Watch devices. It was initially released in selected countries in July 2016. </small></p>
+</div>
+
+<div class="second">
+  <p>Tekken Mobile <span class="price">$22</span><br />
+  <small>Beginning with the original Tekken in 1994, the series has received several sequels as well as updates and spin-off titles. Tekken was one of the first fighting games at the time to use 3D animation. The series has also been adapted into three films and other media. </small></p>
+</div>
+  
+<div class="dessert">
+  <p>HearthStone <span class="price">$8</span><br />
+  <small>Hearthstone is a digital-only collectible card game that revolves around  spend a lot of time understanding the rules to play the game, the depth grows as you go favorable reviews upon release according to review aggregator Metacritic.</small></p>
+</div>
+<div class="fourth">
+  <p>Ninja 2 <span class="price">$8</span><br />
+  <small>the player, controlling a ninja, must fight his way through various levels populated by opponents, collecting necessary items in the process. Each level depicts a different locale and is divided into several screens. </small></p>
+</div>
+
+<script>
+  $('p').hover(function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
